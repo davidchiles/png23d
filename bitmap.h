@@ -4,8 +4,8 @@
  * Licenced under the MIT License,
  *                http://www.opensource.org/licenses/mit-license.php
  *
- * This file is part of png23d. 
- * 
+ * This file is part of png23d.
+ *
  * bitmap format.
  */
 
@@ -23,4 +23,8 @@ bitmap *create_bitmap(const char *filename);
 
 void free_bitmap(bitmap *bm);
 
+#endif
+
+#ifndef STDIN_FILENO
+#define STDIN_FILENO 0
 #endif
