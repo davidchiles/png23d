@@ -42,10 +42,10 @@ clean: testclean
 	${RM} png23d $(PNG23D_OBJ) *.d *~ png23d.png
 
 install:png23d
-	install -D png23d $(DESTDIR)$(PREFIX)/bin
+	install png23d $(DESTDIR)$(PREFIX)/bin
 
 install-man:png23d.1
-	install -D png23d.1 $(DESTDIR)$(PREFIX)/share/man/man1
+	install png23d.1 $(DESTDIR)$(PREFIX)/share/man/man1
 
 # logo creation
 png23d.png:png23d.pov
